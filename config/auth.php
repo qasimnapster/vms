@@ -38,7 +38,7 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'portal_user',
         ],
     ],
 
@@ -60,9 +60,15 @@ return [
     */
 
     'providers' => [
+        
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+
+        'portal_user' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin\PortalUser::class,
         ],
 
         // 'users' => [
