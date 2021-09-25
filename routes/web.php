@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\SupplierController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +21,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('admin.index');
 });
+
+Route::prefix('admin')->middleware('admin.auth')->group(function() {
+
+    Route::get('/', [AuthController::class, 'index'])->name('admin.index');
+
+    Route::get('login', [AuthController::class, 'getLogin'])->name('admin.login');
+    Route::post('process/login', [AuthController::class, 'processLogin'])->name('admin.process_login');
+
+    Route::resource('suppliers', SupplierController::class);
+
+});
+
+
+

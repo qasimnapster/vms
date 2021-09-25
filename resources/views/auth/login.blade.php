@@ -17,7 +17,7 @@
     <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="CodedThemes">
     <!-- Favicon icon -->
-    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('backend/assets/images/favicon.ico') }}" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
     <!-- Required Fremwork -->
@@ -57,7 +57,8 @@
                 <div class="col-sm-12">
                     <!-- Authentication card start -->
                     <div class="login-card card-block auth-body mr-auto ml-auto">
-                        <form class="md-float-material">
+                        <form method="post" action="{{ route('admin.process_login') }}">
+                            @csrf
                             <div class="text-center">
                                 <img src="{{ asset('backend/assets/images/auth/logo-dark.png') }}" alt="logo.png">
                             </div>
@@ -69,11 +70,17 @@
                                 </div>
                                 <hr/>
                                 <div class="input-group">
-                                    <input type="email" class="form-control" placeholder="Your Email Address">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email Address">
+                                    @error('email')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                     <span class="md-line"></span>
                                 </div>
                                 <div class="input-group">
-                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                                    @error('password')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                     <span class="md-line"></span>
                                 </div>
                                 <div class="row m-t-25 text-left">
@@ -92,7 +99,7 @@
                                 </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-12">
-                                        <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Sign in</button>
+                                        <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Sign in</button>
                                     </div>
                                 </div>
                                 <hr/>
