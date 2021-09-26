@@ -17,18 +17,18 @@
       <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
       <meta name="author" content="CodedThemes">
       <!-- Favicon icon -->
-      <link rel="icon" href="{{ asset('backend/assets/images/favicon.ico') }}" type="image/x-icon">
+      <link rel="icon" href="{{ asset('assets/backend/images/favicon.ico') }}" type="image/x-icon">
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
       <!-- Required Fremwork -->
-      <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/bootstrap/css/bootstrap.min.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/css/bootstrap/css/bootstrap.min.css') }}">
       <!-- themify-icons line icon -->
-      <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/icon/themify-icons/themify-icons.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/icon/themify-icons/themify-icons.css') }}">
       <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/icon/icofont/css/icofont.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/icon/icofont/css/icofont.css') }}">
       <!-- Style.css -->
-      <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/style.css') }}">
-      <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/jquery.mCustomScrollbar.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/css/style.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/css/jquery.mCustomScrollbar.css') }}">
   </head>
 
   <body>
@@ -137,26 +137,26 @@
 <![endif]-->
 <!-- Warning Section Ends -->
 <!-- Required Jquery -->
-<script type="text/javascript" src="{{ asset('backend/assets/js/jquery/jquery.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('backend/assets/js/jquery-ui/jquery-ui.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('backend/assets/js/popper.js/popper.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('backend/assets/js/bootstrap/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/backend/js/jquery/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/backend/js/jquery-ui/jquery-ui.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/backend/js/popper.js/popper.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/backend/js/bootstrap/js/bootstrap.min.js') }}"></script>
 <!-- jquery slimscroll js -->
-<script type="text/javascript" src="{{ asset('backend/assets/js/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/backend/js/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
 <!-- modernizr js -->
-<script type="text/javascript" src="{{ asset('backend/assets/js/modernizr/modernizr.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/backend/js/modernizr/modernizr.js') }}"></script>
 <!-- am chart -->
-<script src="{{ asset('backend/assets/pages/widget/amchart/amcharts.min.js') }}"></script>
-<script src="{{ asset('backend/assets/pages/widget/amchart/serial.min.js') }}"></script>
+<script src="{{ asset('assets/backend/pages/widget/amchart/amcharts.min.js') }}"></script>
+<script src="{{ asset('assets/backend/pages/widget/amchart/serial.min.js') }}"></script>
 <!-- Todo js -->
-<script type="text/javascript " src="{{ asset('backend/assets/pages/todo/todo.js') }}"></script>
+<script type="text/javascript " src="{{ asset('assets/backend/pages/todo/todo.js') }}"></script>
 <!-- Custom js -->
-<script type="text/javascript" src="{{ asset('backend/assets/pages/dashboard/custom-dashboard.js') }}"></script>
-<script type="text/javascript" src="{{ asset('backend/assets/js/script.js') }}"></script>
-<script type="text/javascript " src="{{ asset('backend/assets/js/SmoothScroll.js') }}"></script>
-<script src="{{ asset('backend/assets/js/pcoded.min.js') }}"></script>
-<script src="{{ asset('backend/assets/js/demo-12.js') }}"></script>
-<script src="{{ asset('backend/assets/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/backend/pages/dashboard/custom-dashboard.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/backend/js/script.js') }}"></script>
+<script type="text/javascript " src="{{ asset('assets/backend/js/SmoothScroll.js') }}"></script>
+<script src="{{ asset('assets/backend/js/pcoded.min.js') }}"></script>
+<script src="{{ asset('assets/backend/js/demo-12.js') }}"></script>
+<script src="{{ asset('assets/backend/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
 <script>
 var $window = $(window);
 var nav = $('.fixed-button');
